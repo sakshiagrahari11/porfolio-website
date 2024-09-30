@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakshi Agrahari Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- ---------- Header ---------- -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a class="navbar-brand" href="index.html"
+            ><span>S</span>akshi <span>A</span>grahari</a
+          >
+
+          <!-- <img src="images/logo.png" alt="logo"> -->
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Hello!!</p>
+          <h1>
+            I'm <span>Sakshi</span><br />Agrahari from Indore<br />I'm
+            <span id="typing-animation"></span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- About ---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profile.png" alt="image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I’m Sakshi Agrahari, a passionate and driven Developer dedicated
+              to transforming ideas into reality through innovative technology
+              and design. With a solid foundation in React, HTML, CSS,
+              JavaScript, SQL, I thrive on creating web applications and user
+              experiences that are not only functional but also visually
+              appealing.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>React Development</span><br />Developing dynamic web
+                  applications
+                </li>
+                <li>
+                  <span>Web Development</span><br />Crafting responsive websites
+                </li>
+                <li>
+                  <span>Full Stack Development</span><br />Building end-to-end
+                  web applications
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2024 - Current</span><br />Alphawizz Technologies</li>
+                <li><span>2024</span><br />Pixel Tech</li>
+                <li><span>2023</span><br />Oasis Infobyte</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Graduation</span><br />Sushila Devi Bansal College Of
+                  Engineering
+                </li>
+                <li>
+                  <span>HSC</span><br />Shri Shankar Rao Chauhan Vidyalaya
+                </li>
+                <li><span>SSC</span><br />Shri Jagadamba High School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- Services ---------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">MY Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>React Developer</h2>
+            <p>
+              As a React Developer, I specialize in building dynamic and
+              responsive user interfaces using the power of React and modern
+              JavaScript. With expertise in component-based architecture, state
+              management, and the React ecosystem, I have a deep understanding
+              of React features such as hooks, virtual DOM, and lifecycle
+              methods. I excel at creating scalable and maintainable front-end
+              code, following best practices, and ensuring optimal performance.
+              With strong problem-solving skills and a passion for innovation, I
+              am dedicated to delivering high-quality, engaging web applications
+              that provide exceptional user experiences.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Designing</h2>
+            <p>
+              As a Web Developer, I specialize in crafting visually appealing
+              and user-friendly websites that balance aesthetics and
+              functionality. With expertise in HTML, CSS, JavaScript, and
+              responsive design principles, I create websites that work
+              seamlessly across devices. I have a strong understanding of UI/UX
+              design, typography, color theory, and layout principles, enabling
+              me to design intuitive and engaging interfaces. I excel in
+              developing clean, maintainable code and applying best practices to
+              ensure performance and accessibility. With a passion for
+              creativity and innovation, I am dedicated to delivering impactful
+              web designs that enhance the user experience.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h2>Full Stack Developer</h2>
+            <p>
+              As a Full Stack Developer, I specialize in building end-to-end web
+              applications by handling both front-end and back-end development.
+              With expertise in a wide range of technologies such as HTML, CSS,
+              JavaScript, React, Node.js, and databases like MongoDB and MySQL,
+              I deliver seamless user experiences and robust server-side
+              functionality. I have a deep understanding of RESTful APIs, cloud
+              services, and version control, enabling me to create scalable,
+              maintainable, and efficient applications. I excel in
+              problem-solving, following best coding practices, and ensuring
+              performance optimization. My passion for innovation drives me to
+              build comprehensive solutions that meet both technical and
+              business needs.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- Portfolio ---------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">MY Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/project-1.png" alt="" />
+            <div class="layer">
+              <h3>E Commerce Website</h3>
+              <p>
+                This is a fully responsive, modern e-commerce website built
+                using React. The platform allows users to browse, search, and
+                purchase a wide variety of products with a seamless shopping
+                experience.
+              </p>
+              <a href="https://github.com/sakshiagrahari11/e-commerce-website"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/project-2.png" alt="" />
+            <div class="layer">
+              <h3>Appointy</h3>
+              <p>
+                An Appointy is a E Appointment System which is based on Patients
+                and health care providers.Basically it is a MERN application
+                which performs basic appointment tasks.Its features are : Book
+                Appointment, Check Availability, Update Patient Profile, etc.
+              </p>
+              <a
+                href="https://github.com/sakshiagrahari11/doctor-appointment-web"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/project-3.png" alt="" />
+            <div class="layer">
+              <h3>Portfolio Website</h3>
+              <p>
+                My portfolio showcases a range of projects, from full-stack
+                development to front-end web design. With proficiency in
+                technologies like Java, MERN stack, React, and modern web design
+                tools, I bring ideas to life through clean, efficient, and
+                scalable code.
+              </p>
+              <a href="https://github.com/sakshiagrahari11/porfolio-website"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#portfolio" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- ---------- Contact ---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p class="email">
+              <i class="fa-solid fa-envelope"></i>sakshiagrahari156@gmail.com
+            </p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i>9359232070</p>
+            <div class="social-icons">
+              <a href="https://github.com/sakshiagrahari11"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/sakshi-agrahari-785931206"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.hackerrank.com/profile/sakshiagrahari11"
+                ><i class="fa-brands fa-hackerrank"></i
+              ></a>
+              <a href="https://www.geeksforgeeks.org/user/sakshiagrahari156"
+                ><i class="fa-solid fa-laptop-code"></i
+              ></a>
+            </div>
+            <a
+              href="images/Sakshi Agrahari Resume.pdf"
+              class="btn btn2"
+              download
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Sakshi Made with <i class="fas fa-heart"></i> by Sakshi
+          Agrahari
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sideMenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sideMenu.style.right = "0";
+      }
+      function closemenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      // Initialize the typing animation
+      const typingAnimationElement =
+        document.getElementById("typing-animation");
+
+      // Create an array of typing text
+      const typingTexts = [
+        "Software Developer  ",
+        "React Developer  ",
+        "Web Developer   ",
+      ];
+
+      // Create a function to display the typing animation for a given text
+      function playTypingAnimation(text) {
+        // Loop through each character and add it to the element
+        for (let i = 0; i < text.length; i++) {
+          setTimeout(() => {
+            typingAnimationElement.textContent += text[i];
+          }, i * 200); // Increase the delay to slow down the typing animation
+        }
+
+        // Once the animation is complete, reset the text and start over
+        setTimeout(() => {
+          typingAnimationElement.textContent = "";
+          playTypingAnimation(
+            typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]
+          );
+        }, text.length * 200);
+      }
+
+      // Start the typing animation loop
+      playTypingAnimation(typingTexts[0]);
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxnaOrde8I4W7ESZYlvNjnAqWDPryFMa_z-uZ3n6Hb96GhhKOw7f_Qv75IH2UXLtHCt/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        console.log("Form submission started");
+
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            console.log("Form submitted successfully");
+
+            // Display success message
+            msg.innerHTML = "Message sent successfully";
+
+            // Clear the message after 5 seconds
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+
+            // Reset the form
+            form.reset();
+          })
+          .catch((error) => {
+            console.error("Error!", error.message);
+            msg.innerHTML = "Error submitting form";
+          });
+      });
+    </script>
+  </body>
+</html>
